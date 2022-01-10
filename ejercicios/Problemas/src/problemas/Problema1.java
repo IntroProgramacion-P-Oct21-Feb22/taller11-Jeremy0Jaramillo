@@ -18,9 +18,18 @@ public class Problema1 {
         int[][] informacion = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};
         imprimirDatos(informacion);
     }
-    
-    public static void imprimirDatos(int[][] datos){
-    
+
+    public static void imprimirDatos(int[][] datos) {
+        for (int filas = 0; filas < 3; filas++) {
+            for (int columnas = 0; columnas < 3; columnas++) {
+                int operacion;
+                operacion = datos[filas][columnas] % 2;
+                if (operacion == 0) {
+                    System.out.println(datos[filas][columnas]);
+                }
+
+            }
+        }
     }
-    
+
 }
